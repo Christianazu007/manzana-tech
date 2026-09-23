@@ -2,8 +2,7 @@
 
 Pre-entrega del curso **React JS – Talento Tech**.
 
-- 🌐 Sitio online: _(pegar acá la URL de Netlify o Vercel)_
-- 📦 Repositorio: _(pegar acá la URL de GitHub)_
+- 📦 Repositorio: https://github.com/Christianazu007/manzana-tech
 
 ## Cómo correrlo
 
