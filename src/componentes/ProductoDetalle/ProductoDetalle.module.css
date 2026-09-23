@@ -1,0 +1,56 @@
+.detalle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  padding: 2rem;
+}
+
+.imagen {
+  width: 100%;
+  border-radius: var(--radio);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.volver {
+  font-size: 0.9rem;
+}
+
+.categoria {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-texto-suave);
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.descripcion {
+  color: var(--color-texto-suave);
+}
+
+.stock {
+  font-size: 0.9rem;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.ok {
+  color: #1d7d3a;
+  font-size: 0.95rem;
+}

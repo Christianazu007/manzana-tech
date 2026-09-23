@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.input {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 980px;
+  font: inherit;
+}
+
+.input:focus {
+  outline: 2px solid var(--color-acento);
+  border-color: transparent;
+}
+
+.ok {
+  margin-top: 0.5rem;
+  color: #1d7d3a;
+}
+
+.error {
+  margin-top: 0.5rem;
+  color: var(--color-error);
+}

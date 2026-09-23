@@ -1,0 +1,53 @@
+.card {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.imagen {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+}
+
+.cuerpo {
+  padding: 1rem 1.2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.categoria {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-texto-suave);
+}
+
+.nombre {
+  font-size: 1.1rem;
+}
+
+.precio {
+  font-weight: 600;
+}
+
+.sinStock {
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.boton {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #fff;
+}

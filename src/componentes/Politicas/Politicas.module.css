@@ -1,0 +1,19 @@
+.politicas {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.politicas h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.politicas p {
+  color: var(--color-texto-suave);
+}

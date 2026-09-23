@@ -1,0 +1,26 @@
+.widget {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icono {
+  font-size: 1.35rem;
+}
+
+.contador {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background-color: var(--color-acento);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

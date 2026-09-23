@@ -1,0 +1,82 @@
+:root {
+  --color-fondo: #f5f5f7;
+  --color-superficie: #ffffff;
+  --color-texto: #1d1d1f;
+  --color-texto-suave: #6e6e73;
+  --color-acento: #0071e3;
+  --color-acento-hover: #0077ed;
+  --color-borde: #d2d2d7;
+  --color-error: #d70015;
+  --radio: 14px;
+  --ancho-max: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.contenedor {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.btn {
+  background-color: var(--color-acento);
+  color: #fff;
+  border: none;
+  border-radius: 980px;
+  padding: 0.6rem 1.3rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.btn:disabled {
+  background-color: var(--color-borde);
+  cursor: not-allowed;
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--color-acento);
+  border: 1px solid var(--color-acento);
+  border-radius: 980px;
+  padding: 0.55rem 1.2rem;
+}
+
+.mensaje {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-texto-suave);
+}
+
+.mensaje-error {
+  color: var(--color-error);
+}

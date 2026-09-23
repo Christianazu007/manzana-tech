@@ -1,0 +1,16 @@
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link {
+  color: #d2d2d7;
+  font-size: 0.95rem;
+}
+
+.link:hover,
+.activo {
+  color: #fff;
+}

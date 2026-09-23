@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "iPhone 16 Pro",
+    "categoria": "iPhone",
+    "precio": 2150000,
+    "stock": 12,
+    "destacado": true,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Pantalla Super Retina XDR de 6,3\", chip A18 Pro y sistema de cámaras Pro con zoom óptico 5x."
+  },
+  {
+    "id": 2,
+    "nombre": "iPhone 16",
+    "categoria": "iPhone",
+    "precio": 1650000,
+    "stock": 20,
+    "destacado": false,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Pantalla de 6,1\", chip A18, botón de Acción y control de cámara."
+  },
+  {
+    "id": 3,
+    "nombre": "MacBook Air 13\" M3",
+    "categoria": "Mac",
+    "precio": 2400000,
+    "stock": 8,
+    "destacado": true,
+    "imagen": "/images/macbook.png",
+    "descripcion": "Ultraliviana, chip M3, 16 GB de memoria unificada y hasta 18 horas de batería."
+  },
+  {
+    "id": 4,
+    "nombre": "MacBook Pro 14\" M4",
+    "categoria": "Mac",
+    "precio": 3900000,
+    "stock": 4,
+    "destacado": false,
+    "imagen": "/images/macbook.png",
+    "descripcion": "Chip M4, pantalla Liquid Retina XDR y puertos Thunderbolt para trabajo profesional."
+  },
+  {
+    "id": 5,
+    "nombre": "iPad Air 11\"",
+    "categoria": "iPad",
+    "precio": 1350000,
+    "stock": 10,
+    "destacado": true,
+    "imagen": "/images/ipad.png",
+    "descripcion": "Chip M2, compatible con Apple Pencil Pro y Magic Keyboard."
+  },
+  {
+    "id": 6,
+    "nombre": "Apple Watch Series 10",
+    "categoria": "Watch",
+    "precio": 950000,
+    "stock": 15,
+    "destacado": false,
+    "imagen": "/images/watch.png",
+    "descripcion": "Pantalla más grande y más delgada, sensores de salud y resistencia al agua."
+  },
+  {
+    "id": 7,
+    "nombre": "AirPods Pro 2",
+    "categoria": "AirPods",
+    "precio": 520000,
+    "stock": 25,
+    "destacado": true,
+    "imagen": "/images/airpods.png",
+    "descripcion": "Cancelación activa de ruido, audio espacial y estuche con USB-C."
+  },
+  {
+    "id": 8,
+    "nombre": "AirPods 4",
+    "categoria": "AirPods",
+    "precio": 310000,
+    "stock": 0,
+    "destacado": false,
+    "imagen": "/images/airpods.png",
+    "descripcion": "Diseño renovado, audio personalizado y hasta 30 horas de batería con el estuche."
+  }
+]

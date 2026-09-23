@@ -1,0 +1,96 @@
+.titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  padding: 1rem;
+}
+
+.imagen {
+  width: 90px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.datos {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.datos h4 {
+  color: var(--color-texto);
+  font-size: 1rem;
+}
+
+.subtotal {
+  text-align: right;
+  font-weight: 600;
+}
+
+.quitar {
+  background: none;
+  border: none;
+  color: var(--color-error);
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.resumen {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  padding: 1.2rem 1.5rem;
+}
+
+.botones {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.confirmacion {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.check {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1d7d3a;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmacion p {
+  color: var(--color-texto-suave);
+}

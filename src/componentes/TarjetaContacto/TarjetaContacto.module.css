@@ -1,0 +1,26 @@
+.tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  background-color: var(--color-fondo);
+  border-radius: var(--radio);
+}
+
+.foto {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.puesto {
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+}
+
+.email {
+  font-size: 0.8rem;
+  overflow-wrap: break-word;
+  word-break: normal;
+}

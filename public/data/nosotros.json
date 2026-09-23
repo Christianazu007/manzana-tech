@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Silvia Gómez",
+    "puesto": "Product Owner",
+    "email": "silvia@manzanatech.com",
+    "foto": "/images/equipo/silvia.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Luis Pérez",
+    "puesto": "Diseñador UX/UI",
+    "email": "luis@manzanatech.com",
+    "foto": "/images/equipo/luis.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Matías Ruiz",
+    "puesto": "Desarrollador Frontend",
+    "email": "matias@manzanatech.com",
+    "foto": "/images/equipo/matias.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Sabrina López",
+    "puesto": "Desarrolladora Frontend",
+    "email": "sabrina@manzanatech.com",
+    "foto": "/images/equipo/sabrina.png"
+  }
+]
