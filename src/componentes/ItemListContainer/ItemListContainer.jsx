@@ -7,7 +7,7 @@ import Paginador from '../Paginador/Paginador';
 import Spinner from '../Spinner/Spinner';
 import styles from './ItemListContainer.module.css';
 
-const PRODUCTOS_POR_PAGINA = 6;
+const PRODUCTOS_POR_PAGINA = 12;
 
 function ItemListContainer({ titulo, soloDestacados = false, conBuscador = false }) {
   const [productos, setProductos] = useState([]);
