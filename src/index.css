@@ -80,3 +80,45 @@ button {
 .mensaje-error {
   color: var(--color-error);
 }
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  font: inherit;
+  background-color: var(--color-superficie);
+}
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+  outline: 2px solid var(--color-acento);
+  border-color: transparent;
+}
+
+.campo-invalido input,
+.campo-invalido textarea {
+  border-color: var(--color-error);
+}
+
+.texto-error {
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+.btn-peligro {
+  background-color: var(--color-error);
+  color: #fff;
+  border: none;
+  border-radius: 980px;
+  padding: 0.6rem 1.3rem;
+}

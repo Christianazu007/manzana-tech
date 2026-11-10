@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../../context/CartContext';
+import { useCarrito } from '../../context/CarritoContext';
 import { formatearPrecio } from '../../utils/formatearPrecio';
 import styles from './Cart.module.css';
 
 function Cart() {
-  const { cart, removeFromCart, clearCart, getCartTotal, getCartQuantity } = useCart();
+  const { cart, removeFromCart, clearCart, getCartTotal, getCartQuantity } = useCarrito();
   const [compra, setCompra] = useState(null);
 
   const finalizarCompra = () => {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import TarjetaContacto from '../TarjetaContacto/TarjetaContacto';
+import Spinner from '../Spinner/Spinner';
 import styles from './Equipo.module.css';
 
 function Equipo() {
@@ -18,7 +19,7 @@ function Equipo() {
       .finally(() => setCargando(false));
   }, []);
 
-  if (cargando) return <p className={styles.estado}>Cargando equipo...</p>;
+  if (cargando) return <Spinner texto="Cargando equipo..." />;
   if (error) return <p className={`${styles.estado} mensaje-error`}>Error: {error}</p>;
 
   return (

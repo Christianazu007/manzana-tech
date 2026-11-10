@@ -1,4 +1,28 @@
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .titulo {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+}
+
+.buscador {
+  flex: 1;
+  max-width: 360px;
+  min-width: 220px;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 980px;
+  font: inherit;
+  background-color: var(--color-superficie);
+}
+
+.buscador:focus {
+  outline: 2px solid var(--color-acento);
+  border-color: transparent;
 }

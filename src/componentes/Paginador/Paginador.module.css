@@ -1,0 +1,27 @@
+.paginador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 2rem;
+}
+
+.paginador button {
+  min-width: 40px;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+.paginador button:disabled {
+  color: var(--color-borde);
+  cursor: not-allowed;
+}
+
+.paginador .activa {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+  color: #fff;
+}

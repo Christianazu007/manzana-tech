@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../../context/CartContext';
+import { useCarrito } from '../../context/CarritoContext';
 import styles from './CartWidget.module.css';
 
 function CartWidget() {
-  const { getCartQuantity } = useCart();
+  const { getCartQuantity } = useCarrito();
   const totalItems = getCartQuantity();
 
   return (

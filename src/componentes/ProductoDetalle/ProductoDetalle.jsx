@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useCart } from '../../context/CartContext';
+import { doc, getDocFromServer } from 'firebase/firestore';
+import { db } from '../../firebase/config';
+import { traducirError } from '../../utils/erroresFirebase';
+import { useCarrito } from '../../context/CarritoContext';
 import { formatearPrecio } from '../../utils/formatearPrecio';
 import Contador from '../Contador/Contador';
+import Spinner from '../Spinner/Spinner';
 import styles from './ProductoDetalle.module.css';
 
 function ProductoDetalle() {
   const { id } = useParams();
-  const { addToCart, cart } = useCart();
+  const { addToCart, cart } = useCarrito();
 
   const [producto, setProducto] = useState(null);
   const [cargando, setCargando] = useState(true);
@@ -16,20 +20,15 @@ function ProductoDetalle() {
   const [agregado, setAgregado] = useState(false);
 
   useEffect(() => {
-    fetch('/data/productos.json')
+    getDocFromServer(doc(db, 'productos', id))
       .then((respuesta) => {
-        if (!respuesta.ok) throw new Error('No se pudo cargar el producto');
-        return respuesta.json();
+        setProducto(respuesta.exists() ? { ...respuesta.data(), id: respuesta.id } : null);
       })
-      .then((datos) => {
-        const encontrado = datos.find((p) => p.id === Number(id));
-        setProducto(encontrado ?? null);
-      })
-      .catch((err) => setError(err.message))
+      .catch((err) => setError(traducirError(err)))
       .finally(() => setCargando(false));
   }, [id]);
 
-  if (cargando) return <p className="mensaje">Cargando detalle del producto...</p>;
+  if (cargando) return <Spinner texto="Cargando producto..." />;
   if (error) return <p className="mensaje mensaje-error">Error: {error}</p>;
   if (!producto) {
     return (

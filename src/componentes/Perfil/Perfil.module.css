@@ -1,0 +1,25 @@
+.perfil {
+  max-width: 520px;
+  margin: 2rem auto;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.rol {
+  color: var(--color-texto-suave);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.acciones a {
+  color: #fff;
+}
