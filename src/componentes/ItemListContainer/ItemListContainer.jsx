@@ -20,7 +20,7 @@ function ItemListContainer({ titulo, soloDestacados = false, conBuscador = false
     getDocsFromServer(collection(db, 'productos'))
       .then((respuesta) => {
         const datos = respuesta.docs.map((d) => ({ ...d.data(), id: d.id }));
-        setProductos(soloDestacados ? datos.filter((p) => p.destacado) : datos);
+        setProductos(soloDestacados ? datos.filter((p) => p.destacado).slice(0, 4) : datos);
       })
       .catch((err) => setError(traducirError(err)))
       .finally(() => setCargando(false));
