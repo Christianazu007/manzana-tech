@@ -134,15 +134,21 @@ function Gestion() {
     try {
       const respuesta = await fetch('/data/productos.json');
       const datos = await respuesta.json();
+      const nombresActuales = productos.map((p) => p.nombre.toLowerCase());
+      const nuevos = datos.filter((item) => !nombresActuales.includes(item.nombre.toLowerCase()));
+      if (nuevos.length === 0) {
+        mostrarAviso('No hay productos nuevos para importar.');
+        return;
+      }
       const lote = writeBatch(db);
-      datos.forEach((item) => {
+      nuevos.forEach((item) => {
         const producto = { ...item };
         delete producto.id;
         lote.set(doc(collection(db, 'productos')), producto);
       });
       await lote.commit();
       setProductos(await leerProductos());
-      mostrarAviso('Productos de ejemplo importados.');
+      mostrarAviso(`Se importaron ${nuevos.length} productos.`);
     } catch (err) {
       setError(traducirError(err));
     } finally {
@@ -167,7 +173,14 @@ function Gestion() {
         cancelarEdicion={cancelarEdicion}
       />
 
-      <h3>Productos ({productos.length})</h3>
+      <div className={styles.encabezadoLista}>
+        <h3>Productos ({productos.length})</h3>
+        {!cargando && productos.length > 0 && (
+          <button className="btn-secundario" onClick={importarProductos} disabled={guardando}>
+            {guardando ? 'Importando...' : 'Importar productos de ejemplo'}
+          </button>
+        )}
+      </div>
 
       {cargando ? (
         <Spinner texto="Cargando productos..." />

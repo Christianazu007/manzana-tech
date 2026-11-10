@@ -78,5 +78,125 @@
     "destacado": false,
     "imagen": "/images/airpods.png",
     "descripcion": "Diseño renovado, audio personalizado y hasta 30 horas de batería con el estuche."
+  },
+  {
+    "id": 9,
+    "nombre": "iPhone 16 Pro Max",
+    "categoria": "iPhone",
+    "precio": 2550000,
+    "stock": 8,
+    "destacado": true,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Pantalla de 6,9\", chip A18 Pro, la mayor batería de un iPhone y zoom óptico 5x."
+  },
+  {
+    "id": 10,
+    "nombre": "iPhone 16 Plus",
+    "categoria": "iPhone",
+    "precio": 1850000,
+    "stock": 10,
+    "destacado": false,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Pantalla de 6,7\", chip A18, botón de Acción y gran autonomía."
+  },
+  {
+    "id": 11,
+    "nombre": "iPhone 16e",
+    "categoria": "iPhone",
+    "precio": 1150000,
+    "stock": 18,
+    "destacado": false,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Chip A18, cámara de 48 MP y Face ID, en un diseño de 6,1\"."
+  },
+  {
+    "id": 12,
+    "nombre": "iPhone 15",
+    "categoria": "iPhone",
+    "precio": 1300000,
+    "stock": 12,
+    "destacado": false,
+    "imagen": "/images/iphone.png",
+    "descripcion": "Dynamic Island, cámara de 48 MP y puerto USB-C."
+  },
+  {
+    "id": 13,
+    "nombre": "MacBook Air 15\" M3",
+    "categoria": "Mac",
+    "precio": 2900000,
+    "stock": 6,
+    "destacado": false,
+    "imagen": "/images/macbook.png",
+    "descripcion": "Pantalla Liquid Retina de 15\", chip M3 y hasta 18 horas de batería."
+  },
+  {
+    "id": 14,
+    "nombre": "MacBook Pro 16\" M4 Pro",
+    "categoria": "Mac",
+    "precio": 5600000,
+    "stock": 3,
+    "destacado": false,
+    "imagen": "/images/macbook.png",
+    "descripcion": "Chip M4 Pro, pantalla de 16\" y hasta 24 horas de batería."
+  },
+  {
+    "id": 15,
+    "nombre": "iPad Pro 13\" M4",
+    "categoria": "iPad",
+    "precio": 2700000,
+    "stock": 5,
+    "destacado": true,
+    "imagen": "/images/ipad.png",
+    "descripcion": "Pantalla Ultra Retina XDR, chip M4 y diseño ultradelgado."
+  },
+  {
+    "id": 16,
+    "nombre": "iPad mini",
+    "categoria": "iPad",
+    "precio": 950000,
+    "stock": 9,
+    "destacado": false,
+    "imagen": "/images/ipad.png",
+    "descripcion": "Pantalla de 8,3\", chip A17 Pro y compatible con Apple Pencil Pro."
+  },
+  {
+    "id": 17,
+    "nombre": "iPad 11\"",
+    "categoria": "iPad",
+    "precio": 780000,
+    "stock": 20,
+    "destacado": false,
+    "imagen": "/images/ipad.png",
+    "descripcion": "Pantalla Liquid Retina de 11\" y chip A16, ideal para el día a día."
+  },
+  {
+    "id": 18,
+    "nombre": "Apple Watch Ultra 2",
+    "categoria": "Watch",
+    "precio": 1600000,
+    "stock": 4,
+    "destacado": false,
+    "imagen": "/images/watch.png",
+    "descripcion": "Caja de titanio de 49 mm, GPS de doble frecuencia y hasta 36 horas de batería."
+  },
+  {
+    "id": 19,
+    "nombre": "Apple Watch SE",
+    "categoria": "Watch",
+    "precio": 520000,
+    "stock": 14,
+    "destacado": false,
+    "imagen": "/images/watch.png",
+    "descripcion": "Funciones esenciales de salud y actividad a un precio accesible."
+  },
+  {
+    "id": 20,
+    "nombre": "AirPods Max",
+    "categoria": "AirPods",
+    "precio": 1100000,
+    "stock": 5,
+    "destacado": false,
+    "imagen": "/images/airpods.png",
+    "descripcion": "Auriculares over-ear con cancelación activa de ruido y audio espacial."
   }
 ]

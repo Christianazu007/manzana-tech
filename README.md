@@ -30,7 +30,7 @@ Repositorio: https://github.com/Christianazu007/manzana-tech
 npm install
 ```
 
-2. Crear un archivo `.env` en la raíz (podés copiar `.env.example`) con los datos de tu proyecto de Firebase:
+2. Crear un archivo `.env` en la raíz con los datos de tu proyecto de Firebase:
 
 ```
 VITE_FIREBASE_API_KEY=
