@@ -7,6 +7,14 @@ Sitio online: https://elaborate-stardust-97ac46.netlify.app
 
 Repositorio: https://github.com/Christianazu007/manzana-tech
 
+Rol usuario
+ usuario@hotmail.com
+ 123456
+
+Rol Admin
+ admin@hotmail.com
+ 123456
+
 ## Funcionalidades
 
 - Catálogo de productos desde Firestore, con búsqueda en tiempo real y paginador
